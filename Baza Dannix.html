@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+-- create
+CREATE TABLE Persons (Personid int NOT NULL AUTO_INCREMENT,
+  name TEXT NOT NULL,
+  Age int,
+  score float,
+  PRIMARY KEY (Personid)
+);
+
+-- insert
+INSERT INTO Persons (name, age, score)
+VALUES('Misha', 30, 4.5);
+INSERT INTO Persons (name, Age, score)
+VALUES('Boris', 24, 3);
+
+
+-- fetch 
+SELECT * FROM Persons WHERE age > '25';
